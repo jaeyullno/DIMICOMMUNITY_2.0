@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'DIMICOMMUNITY';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff')
+    format('woff'); 
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'manu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shortcuts';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'DIMICOMMUNITY';
+    letter-spacing: 8px;
+    float : center;
+    padding : 20px;
+    background-color: white;
+    transition: background-color 1.5s;
+}
+
+h1:hover {
+    background-color : rgb(255, 211, 218);
+}
+
+nav.manu {
+    display : flex;
+    float : left;
+    padding : 20px;
+    border-right : 1px solid gray;
+}
+
+nav.manu ul {
+    padding : 0px;
+}
+
+nav.manu ul li {
+    font-family: 'manu';
+    padding : 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color : black;
+}
+    
+button.btn {
+    float : right;
+    font-size : 25px;
+    border : none;
+    border-radius: 30px;
+    width : 130px;
+    height: 60px;
+    background-color : rgb(255, 211, 218);
+    text-align : center;
+    cursor: pointer;
+}
+
+button.btn:focus {
+    outline: none;
+}
+
+nav.shortcuts {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    right : 0;
+}
+
+nav.shortcuts ul li {
+        font-family: 'shortcuts';
+        list-style: none;
+        float : left;
+        margin : 20px;
+}
