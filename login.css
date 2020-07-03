@@ -119,3 +119,8 @@ a {
     text-decoration: none;
     color : black;
 }
+
+div.forgot{
+    padding-top : 20px;
+    padding-left : 288px;
+}

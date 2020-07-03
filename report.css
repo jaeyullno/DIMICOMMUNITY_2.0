@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'DIMICOMMUNITY';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff')
+    format('woff'); 
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'manu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/* index.html css*/
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+header {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'DIMICOMMUNITY';
+    letter-spacing: 8px;
+    float : center;
+    padding : 20px;
+}
+
+nav.manu {
+    display : flex;
+    border-right : 1px solid gray;
+    float : left;
+    padding : 20px;
+    
+}
+
+nav.manu ul {
+    padding : 0px;
+}
+
+nav.manu ul li {
+    font-family: 'manu';
+    padding : 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* index.html css*/
