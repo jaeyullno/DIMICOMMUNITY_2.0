@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="./login.css">
     </head>
     <body>
+        
         <section class="login-form">
             <h1>Welcome to <a href="index.html" class="title">DIMI COMMUNITY!</a></h1>
             <form action="" method="post">
@@ -27,9 +28,30 @@
             <div class="forgot">
                 <input type="checkbox" value="rem">비밀번호 기억하기
             </div>
-            <div class="caption">
-                <a href="">비밀번호나 아이디를 잊으셨나요?</a>
-            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">비밀번호나 아이디를 잊으셨나요?</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <div id="kakaotalk">카카오톡 아이디 "0429njy"로 연락 주세요!</div>
+                </div>
+              </div>
         </section>
+        <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
     </body>
 </html>

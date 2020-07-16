@@ -61,7 +61,6 @@ a {
 }
     
 button.btn {
-    float : right;
     font-size : 25px;
     border : none;
     border-radius: 30px;
@@ -70,6 +69,8 @@ button.btn {
     background-color : rgb(255, 211, 218);
     text-align : center;
     cursor: pointer;
+    position : absolute;
+    right : 1px;
 }
 
 button.btn:focus {
@@ -88,4 +89,10 @@ nav.shortcuts ul li {
         list-style: none;
         float : left;
         margin : 20px;
+}
+
+.register {
+    position : absolute;
+    right : 1px;
+    bottom : 500px;
 }
